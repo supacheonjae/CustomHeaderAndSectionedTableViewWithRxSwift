@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		973B7F0CC681890B0CE08675 /* Pods_CustomHeaderAndSectionedTableViewWithRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41208681683EC6BF1A763C89 /* Pods_CustomHeaderAndSectionedTableViewWithRxSwift.framework */; };
+		BD3D32A322BB513700B197FA /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D32A222BB513700B197FA /* HeaderCell.swift */; };
+		BD3D32A522BB515600B197FA /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D32A422BB515600B197FA /* ContentCell.swift */; };
+		BD3D32A722BB56CE00B197FA /* ToDoListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D32A622BB56CE00B197FA /* ToDoListSection.swift */; };
+		BD3D32A922BB57EB00B197FA /* CustomHeaderRxTableViewSectionedReloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3D32A822BB57EB00B197FA /* CustomHeaderRxTableViewSectionedReloadDataSource.swift */; };
 		BD76CEA322BB491500ED9706 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76CEA222BB491500ED9706 /* AppDelegate.swift */; };
 		BD76CEA522BB491500ED9706 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76CEA422BB491500ED9706 /* ViewController.swift */; };
 		BD76CEA822BB491500ED9706 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD76CEA622BB491500ED9706 /* Main.storyboard */; };
@@ -15,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E1EA913E03C5A45527B1C4F /* Pods-CustomHeaderAndSectionedTableViewWithRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomHeaderAndSectionedTableViewWithRxSwift.release.xcconfig"; path = "Target Support Files/Pods-CustomHeaderAndSectionedTableViewWithRxSwift/Pods-CustomHeaderAndSectionedTableViewWithRxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		27BDCC5B1A993B7DF1F71503 /* Pods-CustomHeaderAndSectionedTableViewWithRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomHeaderAndSectionedTableViewWithRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-CustomHeaderAndSectionedTableViewWithRxSwift/Pods-CustomHeaderAndSectionedTableViewWithRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		41208681683EC6BF1A763C89 /* Pods_CustomHeaderAndSectionedTableViewWithRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomHeaderAndSectionedTableViewWithRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3D32A222BB513700B197FA /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		BD3D32A422BB515600B197FA /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		BD3D32A622BB56CE00B197FA /* ToDoListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListSection.swift; sourceTree = "<group>"; };
+		BD3D32A822BB57EB00B197FA /* CustomHeaderRxTableViewSectionedReloadDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderRxTableViewSectionedReloadDataSource.swift; sourceTree = "<group>"; };
 		BD76CE9F22BB491500ED9706 /* CustomHeaderAndSectionedTableViewWithRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomHeaderAndSectionedTableViewWithRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD76CEA222BB491500ED9706 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD76CEA422BB491500ED9706 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +41,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973B7F0CC681890B0CE08675 /* Pods_CustomHeaderAndSectionedTableViewWithRxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C2D46E2F46C756D00EEB14C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41208681683EC6BF1A763C89 /* Pods_CustomHeaderAndSectionedTableViewWithRxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD3D32A122BB50FD00B197FA /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D32A222BB513700B197FA /* HeaderCell.swift */,
+				BD3D32A422BB515600B197FA /* ContentCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BD3D32AA22BB585800B197FA /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BD3D32A822BB57EB00B197FA /* CustomHeaderRxTableViewSectionedReloadDataSource.swift */,
+				BD3D32A622BB56CE00B197FA /* ToDoListSection.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		BD76CE9622BB491500ED9706 = {
 			isa = PBXGroup;
 			children = (
 				BD76CEA122BB491500ED9706 /* CustomHeaderAndSectionedTableViewWithRxSwift */,
 				BD76CEA022BB491500ED9706 /* Products */,
+				D443DE67AED4D51CFC074C91 /* Pods */,
+				9C2D46E2F46C756D00EEB14C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +95,8 @@
 		BD76CEA122BB491500ED9706 /* CustomHeaderAndSectionedTableViewWithRxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BD3D32AA22BB585800B197FA /* Custom */,
+				BD3D32A122BB50FD00B197FA /* Cell */,
 				BD76CEA222BB491500ED9706 /* AppDelegate.swift */,
 				BD76CEA422BB491500ED9706 /* ViewController.swift */,
 				BD76CEA622BB491500ED9706 /* Main.storyboard */,
@@ -64,6 +107,15 @@
 			path = CustomHeaderAndSectionedTableViewWithRxSwift;
 			sourceTree = "<group>";
 		};
+		D443DE67AED4D51CFC074C91 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27BDCC5B1A993B7DF1F71503 /* Pods-CustomHeaderAndSectionedTableViewWithRxSwift.debug.xcconfig */,
+				1E1EA913E03C5A45527B1C4F /* Pods-CustomHeaderAndSectionedTableViewWithRxSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD76CEB122BB491600ED9706 /* Build configuration list for PBXNativeTarget "CustomHeaderAndSectionedTableViewWithRxSwift" */;
 			buildPhases = (
+				020B5AD84DDD369866C5F6D6 /* [CP] Check Pods Manifest.lock */,
 				BD76CE9B22BB491500ED9706 /* Sources */,
 				BD76CE9C22BB491500ED9706 /* Frameworks */,
 				BD76CE9D22BB491500ED9706 /* Resources */,
+				9334D3AC4B119BE28DE0B2B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +184,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		020B5AD84DDD369866C5F6D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomHeaderAndSectionedTableViewWithRxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9334D3AC4B119BE28DE0B2B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomHeaderAndSectionedTableViewWithRxSwift/Pods-CustomHeaderAndSectionedTableViewWithRxSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomHeaderAndSectionedTableViewWithRxSwift/Pods-CustomHeaderAndSectionedTableViewWithRxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BD76CE9B22BB491500ED9706 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BD76CEA522BB491500ED9706 /* ViewController.swift in Sources */,
+				BD3D32A322BB513700B197FA /* HeaderCell.swift in Sources */,
+				BD3D32A922BB57EB00B197FA /* CustomHeaderRxTableViewSectionedReloadDataSource.swift in Sources */,
+				BD3D32A722BB56CE00B197FA /* ToDoListSection.swift in Sources */,
 				BD76CEA322BB491500ED9706 /* AppDelegate.swift in Sources */,
+				BD3D32A522BB515600B197FA /* ContentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +391,12 @@
 		};
 		BD76CEB222BB491600ED9706 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27BDCC5B1A993B7DF1F71503 /* Pods-CustomHeaderAndSectionedTableViewWithRxSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CustomHeaderAndSectionedTableViewWithRxSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +410,12 @@
 		};
 		BD76CEB322BB491600ED9706 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E1EA913E03C5A45527B1C4F /* Pods-CustomHeaderAndSectionedTableViewWithRxSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CustomHeaderAndSectionedTableViewWithRxSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
